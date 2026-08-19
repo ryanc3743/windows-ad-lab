@@ -1,1 +1,94 @@
+# Lab Topology
 
+## Overview
+
+The lab consists of a virtualized Windows environment hosted in VirtualBox.
+
+The primary purpose of the environment is to provide a controlled environment for practicing Windows Server, Active Directory, DNS, Windows client administration, and troubleshooting.
+
+## Logical Topology
+
+
+                    VirtualBox Host
+                         │
+                         │
+                  Virtual Network
+                         │
+             ┌───────────┴───────────┐
+             │                       │
+             ▼                       ▼
+       OFFICE-DC                  Windows Client
+     Windows Server                  │
+       Domain Controller             │
+             │                       │
+             ├── Active Directory    │
+             └── DNS                 │
+                                     │
+                              Domain Membership
+
+# Lab Deployment
+
+## Objective
+
+Build a functional Windows domain environment in VirtualBox consisting of a Windows Server Domain Controller and Windows client machines.
+
+## 1. Virtual Machine Creation
+
+Virtual machines were created in VirtualBox for the Windows Server and client systems.
+
+The virtual machines were configured with the resources necessary to install and operate their respective operating systems.
+
+## 2. Windows Server Installation
+
+Windows Server was installed on the Domain Controller virtual machine.
+
+Initial configuration included:
+
+- Operating system installation
+- Network configuration
+- Hostname configuration
+- Connectivity testing
+
+The Domain Controller was named:
+
+`OFFICE-DC`
+
+## 3. Active Directory Domain Services
+
+Active Directory Domain Services was installed on the Windows Server system.
+
+The server was subsequently promoted to a Domain Controller, establishing the Windows domain environment.
+
+## 4. DNS
+
+DNS was configured as part of the Active Directory environment.
+
+DNS functionality was validated by testing name resolution and client/server communication.
+
+## 5. Windows Client Configuration
+
+Windows client virtual machines were configured and connected to the lab network.
+
+The clients were subsequently joined to the Windows domain.
+
+## 6. Validation
+
+The environment was validated by checking:
+
+- Client/server connectivity
+- DNS resolution
+- Domain membership
+- Communication between Windows clients and the Domain Controller
+- Proper operation of Active Directory services
+
+## 7. Lessons Learned
+
+The deployment demonstrated the relationship between:
+
+- Network configuration
+- DNS
+- Active Directory
+- Domain membership
+- Client/server communication
+
+A major troubleshooting lesson from the lab was that Active Directory functionality depends heavily on correct DNS configuration.
