@@ -1,1 +1,71 @@
+# Windows Active Directory Lab
 
+A virtualized Windows environment built to develop practical experience with Windows Server, Active Directory Domain Services (AD DS), DNS, Windows client administration, virtualization, and infrastructure troubleshooting.
+
+## Objectives
+
+This lab was built to gain hands-on experience with:
+
+- Windows Server administration
+- Active Directory Domain Services
+- DNS configuration and troubleshooting
+- Windows domain environments
+- Client/server communication
+- Virtual machine networking
+- Systematic infrastructure troubleshooting
+- Technical documentation
+
+## Lab Environment
+
+| Component | Configuration |
+|---|---|
+| Hypervisor | VirtualBox |
+| Domain Controller | Windows Server |
+| Directory Services | Active Directory Domain Services |
+| DNS | Windows Server DNS |
+| Clients | Windows client virtual machines |
+| Network | VirtualBox virtual networking |
+
+## Lab Architecture
+
+The environment consists of a Windows Server Domain Controller and Windows client systems operating within a virtualized network.
+
+See [`architecture/topology.md`](architecture/topology.md) for the lab topology and network relationships.
+
+## Implementation
+
+The lab included:
+
+1. Creating the Windows Server virtual machine
+2. Installing Windows Server
+3. Configuring the server's network settings
+4. Installing Active Directory Domain Services
+5. Promoting the server to a Domain Controller
+6. Configuring and validating DNS
+7. Creating Windows client virtual machines
+8. Joining Windows clients to the domain
+9. Testing client/server communication
+10. Troubleshooting DNS and networking issues
+
+Detailed implementation notes are available in [`documentation/deployment.md`](documentation/deployment.md).
+
+## Troubleshooting
+
+During implementation, I encountered configuration issues involving DNS and network interfaces.
+
+Rather than treating the symptoms independently, I used a layered troubleshooting approach to isolate the problem between the client, network configuration, DNS configuration, and Domain Controller.
+
+See [`documentation/troubleshooting.md`](documentation/troubleshooting.md) for the investigation and resolution process.
+
+## Skills Demonstrated
+
+- Windows Server
+- Active Directory Domain Services
+- DNS
+- VirtualBox
+- Windows client administration
+- TCP/IP networking
+- Client/server troubleshooting
+- DNS troubleshooting
+- Virtualized infrastructure
+- Technical documentation
