@@ -17,9 +17,7 @@ This lab was built to gain hands-on experience with:
 
 ## Lab Environment
 
-| Component | Configuration |
-|---|---|
-| Hypervisor | VirtualBox |
+| VirtualBox |
 | Domain Controller | Windows Server |
 | Directory Services | Active Directory Domain Services |
 | DNS | Windows Server DNS |
