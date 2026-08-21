@@ -1,1 +1,71 @@
+# Troubleshooting Case Study: Active Directory & DNS
 
+## Problem
+
+During development of the Windows Active Directory lab, DNS behavior did not initially function as expected.
+
+The Windows environment contained multiple network interfaces/configurations, and the Domain Controller's DNS behavior required investigation.
+
+## Initial Symptoms
+
+The environment exhibited DNS-related connectivity and name-resolution issues.
+
+Rather than immediately changing multiple settings, the problem was approached by examining the configuration at multiple layers.
+
+## Troubleshooting Approach
+
+The investigation considered:
+
+1. Physical/virtual network connectivity
+2. IP configuration
+3. Default gateway
+4. DNS server configuration
+5. Windows DNS configuration
+6. Active Directory integration
+7. Client-side configuration
+
+## Investigation
+
+### Step 1 — Verify Network Configuration
+
+The IP configuration of the affected system was inspected to determine:
+
+- IP address
+- Subnet configuration
+- Default gateway
+- DNS servers
+
+### Step 2 — Test Basic Connectivity
+
+Connectivity was tested independently of DNS to determine whether the problem was network-level or DNS-specific.
+
+### Step 3 — Test DNS Resolution
+
+DNS resolution was tested to determine whether the client could resolve the Domain Controller and other expected resources.
+
+### Step 4 — Examine DNS Configuration
+
+The Domain Controller's DNS configuration was examined to identify whether the correct interface and DNS configuration were being used.
+
+## Root Cause
+
+[We will document the exact root cause here based on what happened in the lab.]
+
+## Resolution
+
+[We will document the exact configuration change that resolved the problem.]
+
+## Verification
+
+After the configuration was corrected, the environment was retested to verify:
+
+- DNS resolution
+- Client/server connectivity
+- Domain functionality
+- Active Directory communication
+
+## Lessons Learned
+
+The primary lesson from this issue was the importance of troubleshooting infrastructure problems systematically rather than assuming the first visible symptom represents the root cause.
+
+DNS, networking, and Active Directory are closely interconnected. A problem appearing to be an Active Directory issue may originate from network or DNS configuration.
